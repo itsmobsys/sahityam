@@ -67,7 +67,7 @@ header{
 .dark-mode-toggle{
     position:absolute;
     top:20px;
-    right:20px;
+    left:20px;
     background:rgba(255,255,255,0.2);
     border:2px solid rgba(255,255,255,0.3);
     color:white;
@@ -432,7 +432,7 @@ window.addEventListener('DOMContentLoaded', function(){
     if(localStorage.getItem('darkMode') === 'enabled'){
         document.body.classList.add('dark-mode');
         document.getElementById('modeIcon').textContent = '☀️';
-        document.getElementById('modeText').textContent = 'Light';
+        document.getElementById('modeText').textContent = 'Light Mode';
     }
 });
 
@@ -455,6 +455,3 @@ document.getElementById("contactModal").addEventListener("click",function(e){
 </body>
 
 </html>
-
-
-
